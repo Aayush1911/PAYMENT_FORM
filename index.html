@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAYMENT FORM</title>
-    <link rel="stylesheet" href="paymentform.css"></link>
-  </head>
-  <body><form><div class="container">
-    <h1><b>PAYMENT FORM</b></h1>
-   
-     <legend>
-       <b><H2>CONTACT INFORMATION</b></h2></legend>
-      <p>NAME</p> 
-      *<input type="text" placeholder="ENTER NAME" name="name" required>
-    <br>
-     <fieldset> <legend><p>GENDER</p></legend>
-      *<input type="radio" value="MALE" name="gender" required>MALE
-      *<input type="radio" value="FEMALE" name="gender" required>FEMALE</fieldset>
-    <br>
-    <p>ADDRESS</p>
-    <textarea name="ADDRESS" placeholder="ENTER ADDRESS"rows="6"cols="50"></textarea><br><br>
-  <p>E-MAIL</p>  <input type="email"placeholder="ENTER YOUR EMAIL"name=email ><br><br>
-  <p>PIN CODE</p><input type="number"name="pincode"placeholder="ENTER PINCODE"><br></form>
-      </span>
-      <legend><b><H2>PAYMENT  INFORMATION</b></h2></legend>
-  <P>CARD TYPE</P> 
-      *<select name="card type"required>
-          <option value="RUPAY">RUPAY</option>RUPAY></option>
-          <option value="VISA">VISA</option>
-          <option value="MASTERCARD">MASTERCARD</option>
-      </select>
-  </P><br>
-  <P>
-      CARD NUMBER :</P> *<input type="number"class="number"placeholder="1111-2222-3333-4444"required>
-  
-<p>
-    EXPIRATION DATE </p> *<input type="date"name="EXPIRATION date"required>
-<br>
-<p>CVV :
-    *<input type="password" name="cvv"placeholder="ENTER CVV"required></p>
-</p><br>
-<p><input type="submit" value="pay now">
-</p></form
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+    color: blue;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color:rgb(200, 230, 240);
 
-  </body>
+}
+h3{
+    color: red;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+fieldset{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:blueviolet;
+    background-color: azure;
+}
+input[type="text"],
+input[type="textarea"],
+input[type="email"],
+input[type="number"],
+input[type="year"],
+select,
+textarea{
+    height: 100%;
+    width: 98%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+select{
+    color: blueviolet;
+
+}
+label{
+    font-size: 20px;
+    font-weight:bolder;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:ghostwhite;
+}
+::placeholder{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blueviolet;
+}
+input[type="submit"]
+{
+    background-color: aqua;
+    font-size: 20px;
+    padding: 12px*20px;
+    border: none;
+    border-radius: 8px;
+    cursor:grab;
+    width: 100%;
+    height: 100%;
+}
+input[type="submit"]:hover{
+    background-color: purple;
+}
+</style>
+<body>
+    <h1><b>
+        JOBS RECRUITMENT
+    </h1></b>
+    <form>
+    <fieldset><legend><b><h3>PERSONAL INFORMATION</h3></b></legend><br>
+        <label for="NAME">NAME</label>
+*<input type="text"placeholder="ENTER YOUR NAME" name="NAME" required><br><br>
+<label for="GENDER">GENDER :</label>
+*<input type="radio" value="MALE" name="GENDER" required>MALE
+*<input type="radio" value="FEMALE" name="GENDER" required>FEMALE<br><br>
+<label for="GENDER">NUMBER :</label>
+*<input type="NUMBER" placeholder="ENTER YOUR NUMBER" name="NUMBER"required><br><br>
+<label for="EMAIL">EMAIL :</label>
+<input type="email" placeholder="abcd1234@gmail.com" name="email"><br><br>
+<label for="ADDRESS">ADDRESS :</label>
+<textarea placeholder="ENTER YOUR ADDRESS" name="ADDRESS" rols="10"cols="40"></textarea></fieldset><br><br>
+<fieldset>
+    <legend><b><h3>COLLEGE INFORMATION</h3></b></legend>
+    <label for="COLLEGE ">COLLEGE  :</label>
+    *<input type="text"placeholder="ENTER YOUR COLLEGE" name="COLLEGE " required><br><br>
+    <label for="DEPARTMENT">DEPARTMENT :</label>
+    *<select name="DEPARTMENT" required>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="EC">EC</option>
+ </select><br><br>
+ <label for="GRADUATION YEAR">GRADUATION YEAR :</label>
+ *<input type="year" placeholder="ENTER GRADUATION YEAR" name="year"required><br><br>
+ <label for="CGPA"> FINAL YEAR CGPA :</label>
+ *<input type="number" placeholder="ENTER CGPA" name="cgpa" max="10" required><br><br>
+ <label for="MARKSHEET">UPLOAD FINAL SEM MARKSHEET :</label>
+ *<input type="file" name="file" required><br><br>
+</fieldset>
+<input type="submit" name="submit"></form>
+</body>
+</body>
+</html>
